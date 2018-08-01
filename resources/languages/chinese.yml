@@ -1,0 +1,83 @@
+# __        __         _     _
+# \ \      / /__  _ __| | __| |___
+#  \ \ /\ / / _ \| '__| |/ _` / __|
+#   \ V  V / (_) | |  | | (_| \__ \
+#    \_/\_/ \___/|_|  |_|\__,_|___/
+#
+# (C) 2018 by surva network | https://github.com/survanetwork
+
+# Chinese language
+
+# General
+general:
+  command:
+    ingame: "§6你只能在游戏里运行这个指令。"
+  world:
+    notexist: "§cWorld §f{name} §c不存在。"
+    notloaded: "§cWorld §f{name} §c未加载或不存在。。"
+  permission: "§6您没有权限进入这个世界。"
+
+# List command
+list:
+  worlds: "§e服务器上的世界: §f{worlds}§e。"
+
+# Create command
+create:
+  success: "§a世界 §f{name} §a已被创建。"
+  failed: "§c创建世界时发生了未知的错误。"
+  generator:
+    notexist: "§6未找到名为 §f{name} §6- 的世界生成器。"
+
+# Remove command
+remove:
+ success: "§a世界 §f{name} §a已被删除。"
+
+# Copy command
+copy:
+ success: "§a世界 §f{name} §a已被复制到 §f{to}§a."
+ same: "§c你不能拷贝世界本身。"
+ datfile:
+     notexist: "§c世界的数据文件不存在。"
+     damaged: "§c世界的数据文件被破坏。"
+     notsave: "§c 世界的数据文件保存失败。"
+
+# Rename command
+rename:
+  success: "§a世界 §f{name} §a已被重命名为 §f{to}§a."
+  same: "§c重命名失败，名字与源文件名相同。"
+  datfile:
+    notexist: "§c世界的数据文件不存在。"
+    damaged: "§c世界的数据文件被破坏。"
+    notsave: "§c世界的数据文件保存失败。"
+
+# Load command
+load:
+  success: "§a世界 §f{world} §a成功加载。"
+  already: "§e世界 §f{name} §eis 已被加载。"
+  failed: "§c无法加载世界。"
+
+# Unload command
+unload:
+  success: "§a世界 §f{world} §a已被卸载。"
+  failed: "§cT无法卸载世界。"
+
+# Teleport command
+teleport:
+  success: "§a您已被传送到 §f{world}§a."
+  failed: "§c无法传送。"
+
+# Set command
+set:
+  success: "§a您已经设置了 §b{key} §ain §f{world} §ato §c{value}§a."
+  list:
+    values: "§c为此世界设置了 §f{name}\n\n§e权限: {permission}\n§e模式: {gamemode}\n§ebuild: {build}\n§epvp: {pvp}\n§edamage: {damage}\n§einteract: {interact}\n§eexplode: {explode}\n§edrop: {drop}\n§ehunger: {hunger}\n§efly: {fly}\n"
+    notset: "§7未设置"
+  permission:
+    notdefault: "§c你无法设置基础世界的权限。"
+  gamemode:
+    notexist: "§6这个游戏模式不存在。"
+  notbool: "§6你的设置§f{key} §6只能是 §atrue §6或者 §afalse§6."
+
+# Unset command
+unset:
+  success: "§b{key} §a已被设置在 §f{world}§a."
